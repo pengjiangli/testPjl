@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.gt</groupId>
+	<artifactId>erp</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>erp Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+
+
+		<!-- spring版本号 -->
+		<spring.version>4.0.9.RELEASE</spring.version>
+		<!-- mybatis版本号 -->
+		<mybatis.version>3.2.6</mybatis.version>
+		<!-- log4j日志文件管理包版本 -->
+		<slf4j.version>1.7.7</slf4j.version>
+		<log4j.version>1.2.17</log4j.version>
+		<cxf.version>3.0.10</cxf.version>
+	</properties>
+	
+	<dependencies>
+	
+		<!-- 到时依赖包 -->
+		<dependency>
+		  <groupId>com.gt</groupId>
+		  <artifactId>comms</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+			
+	</dependencies>
+	<build>
+		<finalName>erp</finalName>
+	</build>
+	<packaging>war</packaging>
+</project>

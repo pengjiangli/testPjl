@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gt.dao.common.DictMapper">
+ 
+  <select id="KeyValueList" resultType="Map">
+		SELECT * FROM t_man_dict_items WHERE dict_id = (SELECT id FROM t_man_dict WHERE dict_type=#{style} AND dict_status=1) AND item_status=1
+   </select>
+    <select id="StyleKeyList" resultType="Map">
+		SELECT * FROM t_man_dict_items WHERE item_key=#{item_key} AND dict_id = (SELECT id FROM t_man_dict WHERE dict_type=#{style} AND dict_status=1) AND item_status=1
+   </select>
+</mapper>
